@@ -41,6 +41,7 @@ In the BookController class, the Factory Method pattern is implemented through t
 This method collects user input for book details, such as title, year, author, and genre, and then instantiates a new Book object with the provided information. The Factory Method pattern allows for flexibility
 in creating Book instances, facilitating potential extensions or variations in the creation process. Additionally, the class utilizes the Observer pattern by notifying the libraryNotificationSystem about the 
 creation of a new book, demonstrating a modular and loosely coupled design for managing book-related functionalities.
+
 ![image](https://github.com/EsQueues/management-system/assets/122588120/78d6c323-4003-4b55-a310-71f1505d74e3)
 ![image](https://github.com/EsQueues/management-system/assets/122588120/42f503c0-f02a-4e9e-a2da-f0e3f97be175)
 
