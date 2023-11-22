@@ -3,6 +3,15 @@ package Model;
 public class Book  extends Literature {
     private int id;
 
+    public Book(int id,String title, int year,  String author, boolean available, String genre, int readerId) {
+        super(title, year);
+        this.id = id;
+        this.author = author;
+        this.available = available;
+        this.genre = genre;
+        this.readerId = readerId;
+    }
+
     public int getId() {
         return id;
     }

@@ -1,7 +1,7 @@
 package NotificationSystem.Decorator;
 
-import NotificationSystem.Strategy.NotificationType;
 import NotificationSystem.Observer.UserObserver;
+import NotificationSystem.Strategy.NotificationType;
 
 import java.time.LocalDateTime;
 

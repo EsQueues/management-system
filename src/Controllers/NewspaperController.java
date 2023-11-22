@@ -18,12 +18,5 @@ public class NewspaperController implements LiteratureController{
         newspaperDAO.addNewspaper(newspaper);
     }
 
-    @Override
-    public void deleteLiterature() {
-        newspaperDAO.deleteNewspaper(newspaper);
-    }
 
-    public void assignLiterature() {
-        newspaperDAO.assign();
-    }
 }

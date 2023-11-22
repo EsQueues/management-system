@@ -12,9 +12,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-public class ListToExcelAdapter {
+public class ListToExcelAdapter implements DataSource {
     private BookDAO bookDAO;
-
 
     public  void exportToExcel(String filePath) {
         List<Book> books = bookDAO.getData();
@@ -51,5 +50,11 @@ public class ListToExcelAdapter {
         } catch (IOException e) {
             System.out.println(e);
         }
+    }
+
+
+    @Override
+    public List<Book> getData() {
+        return null;
     }
 }

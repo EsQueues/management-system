@@ -1,6 +1,7 @@
 package Model;
 
 public abstract class Literature {
+    private int id;
     private String title;
     private int year;
 

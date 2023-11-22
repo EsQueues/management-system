@@ -9,6 +9,12 @@ public class Reader  implements UserObserver {
     private  String email;
     private String password;
 
+    public Reader(int id, String name, String email, String password) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
 
     public String getName() {
         return name;
@@ -52,5 +58,9 @@ public class Reader  implements UserObserver {
     @Override
     public void handleEvent(String message, NotificationType type) {
         System.out.println(message+"\nMessage for "+getName());
+    }
+
+    public void setId(int generatedId) {
+        this.id = generatedId;
     }
 }
